@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Registration Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <div class="form-container">
+        <h1 class="heading">Register now</h1>
+        <form method="GET">
+          <label for firstName>First Name:</label>
+          <input
+            id="firstName"
+            placeholder="First Name"
+            type="text"
+            name="firstname"
+            required
+          /><br />
+          <label for lastName>Last Name:</label>
+          <input
+            id="lastName"
+            placeholder="Last Name"
+            type="text"
+            name="lasttname"
+            required
+          /><br />
+          <label>
+            Email:
+            <input
+              placeholder="Email"
+              type="email"
+              name="email"
+              required/></label
+          ><br />
+          <label
+            >Password:
+            <input
+              placeholder="Password"
+              type="password"
+              name="password"
+              minlength="5"
+              required
+              pattern="(?=.*\d).{5,10}"
+              title="Password must be between 5 and 10 characters and contain at least 1 digit"/></label
+          ><br />
+          Birthday: <input type="date" name="birthday" /><br />
+          Gender:<br />
+          <label for male>Male</label
+          ><input id="male" type="radio" name="gender" value="Male" />
+          <label for male>Female</label
+          ><input id="female" type="radio" name="gender" value="Female" />
+          <label for male>Other</label
+          ><input id="other" type="radio" name="gender" value="Other" /><br />
+          Pets: <br />
+          <input type="checkbox" name="cat" checked /> Cat
+          <input type="checkbox" name="dog" /> Dog<br />
+          Cars:
+          <select name="cars">
+            <option selected disabled>Select Car</option>
+            <option value="volvo">Volvo</option>
+            <option value="volvo">Mazda</option>
+            <option value="audi">Audi</option> </select
+          ><br />
+          <label for agreed>I agree to the terms and conditions: </label>
+
+          <input id="agreed" type="checkbox" /><br />
+          <div class="action">
+            <input class="button" type="submit" value="Register!" />
+            <input class="button" type="reset" />
+            <!-- <button>Submit</button> -->
+          </div>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
