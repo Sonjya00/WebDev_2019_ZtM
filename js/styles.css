@@ -1,0 +1,97 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+body {
+  background-image: url("groceries.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "Raleway", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main {
+  background-color: rgba(250, 250, 240, 0.9);
+  border-radius: 10px;
+  margin: 10px;
+  min-height: 70vh;
+  min-width: 50vw;
+  padding: 20px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.shopping-list__container {
+  padding: 20px;
+}
+
+.heading-primary {
+  color: tomato;
+  letter-spacing: 2px;
+}
+
+.p-description,
+.items {
+  letter-spacing: 1px;
+}
+
+.heading-primary,
+.p-description {
+  text-align: center;
+}
+
+.shopping-list__list {
+  margin-left: -40px;
+  padding-left: -40px;
+  list-style-type: circle;
+  list-style-position: inside;
+}
+
+/* Items */
+
+.list-item {
+  cursor: pointer;
+  word-break: break-all;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  border-bottom: 1px solid silver;
+}
+
+.list-item--done {
+  text-decoration: line-through;
+}
+
+/* Action */
+
+.user-input {
+  background-color: ivory;
+  border-radius: 5px;
+  border-style: hidden;
+  font-family: "Raleway", sans-serif;
+  padding: 5px 10px;
+  text-align: start;
+}
+
+.enter-btn,
+.delete-btn {
+  border-radius: 5px;
+  text-transform: uppercase;
+  padding: 5px 10px;
+}
+
+.enter-btn {
+  background-color: lightgreen;
+}
+
+.delete-btn {
+  margin-left: 10px;
+  background-color: tomato;
+}
